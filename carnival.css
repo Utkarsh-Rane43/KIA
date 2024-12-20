@@ -1,0 +1,154 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .header
+{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.container .header .logo
+{
+    width: 100px;
+    height: 100px;
+    background: url(kia-logo-new-512.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .header .nav ul
+{
+    display: flex;
+    gap: 30px;
+}
+.container .header .nav ul li
+{
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+
+}
+.container .header .nav ul li a
+{
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242b2e;
+}
+.container .header .nav ul li a:hover
+{
+    border-bottom: 2px solid green;
+}
+.container .header .buttons
+{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.container .header .buttons button
+{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+.container .header .buttons button:hover
+{
+    color: #fff;
+    background-image: linear-gradient(to right, #242 20%, #260 80%);
+}
+.container .main_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.container .main_content .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    text-align: center;
+}
+.container .main_content .content h1
+{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+.container .main_content .content span
+{
+    font-size: 30px;
+    letter-spacing:  1px;
+    text-transform: uppercase;
+}
+.container .main_content .content p
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container .main_content .car_img
+{
+    width: 100%;
+    height: 600px;
+    background: url(Kia-Carnival-180220201624.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .future{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container .future .engine,.transmission,.sunroof,.adas
+{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container .future .engine img,.transmission img,.sunroof img,.adas img
+{
+    width: 100px;
+    height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.container .future .engine:hover,.transmission:hover,.sunroof:hover,.adas:hover
+{
+    background-image: linear-gradient(to right, #242 20%, #260 80%);
+    color: #fff;
+    font-weight: 500;
+
+}
